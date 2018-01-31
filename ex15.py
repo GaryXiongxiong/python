@@ -9,9 +9,11 @@
 
 from sys import argv
 
-script, filename = argv
+#script, filename = argv
+#VS下无法带参数调试
+filename = "ex15_sample.txt"
 
-txt = open(filename)
+txt = open(filename) #读写模式:r只读,r+读写,w新建(会覆盖原有文件),a追加,b二进制文件.常用模式
 
 print "Here's your file %r:" % filename
 print txt.read()

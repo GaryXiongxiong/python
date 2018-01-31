@@ -9,7 +9,7 @@
 #
 
 from sys import argv
-from os.path import exists
+from os.path import exists #exists(file)返回bool，查看文件是否存在
 
 script, from_file, to_file = argv
 

@@ -9,23 +9,26 @@
 #
 
 # break_words：把输入的句子依据空格分隔成单个单词
+# split("key") 根据key把字符串分解为数个字符串
 def break_words(stuff) :
     """This function will break up words for us."""
     words = stuff.split(' ')
     return words
 
 # sort_words:依据首字母顺序给单词排序    
+# sorted(),排序函数,可加参数 “reverse=True”来变为降序
+# list.sort()也可进行排序，但是只能用在list中，并且是对已有的list进行操作
 def sort_words(words):
     u"""Sorts(分类) the words."""
     return sorted(words)
 
-# print_first_word：输出第一个单词    
+# print_first_word：输出(并移除)第一个单词  
 def print_first_word(words):
     """Prints the first word after popping it off."""
     word = words.pop(0)
     print word
 
-# print_last_word：输出(并移出)最后一个单词
+# print_last_word：输出(并移出)最后一个单词。pop(n)出栈list中的n号元素。同理push(n)为把n压入栈顶
 def print_last_word(words):
     """Prints the last word after popping it off."""
     word = words.pop(-1)

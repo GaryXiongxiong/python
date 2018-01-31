@@ -9,7 +9,7 @@
 
 print "How old are you?",
 # 接收控制台的输入信息
-age = raw_input()
+age = raw_input() # 在python3.x 中，raw_input 被 input代替（待深究）
 print "How tall are you?",
 height = raw_input()
 print "How much do you weight?",

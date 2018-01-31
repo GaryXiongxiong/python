@@ -14,7 +14,9 @@
 
 from sys import argv
 
-script, filename = argv
+# script, filename = argv
+# VS调试中无法传参
+filename = "ex16_sample.txt"
 
 print "We're going to erase %r." % filename    #抹去
 print "If you don't want that, hit CTRL-C (^C)."
@@ -23,10 +25,9 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 
 print "Opening the file..."
-target = open(filename, 'w+')
-
+target = open(filename, 'w')
 print "Truncating the file. Goodbye!"
-target.truncate()
+# target.truncate()
 
 print "Now I'm going to ask you for three lines."
 
@@ -50,7 +51,10 @@ target.close()
 # 笔记
 #
 # open方法有很多模式：
-# 'r'——读取
-# 'w'——写入
-# 'a'——追加
-# 提示：'w+'等可以同时用读写的方式打开
+# ‘r'	open for reading (default)
+# ‘w'	open for writing, truncating the file first
+# ‘a'	open for writing, appending to the end of the file if it exists
+# ‘b'	binary mode
+# ‘t'	text mode (default)
+# ‘+'	open a disk file for updating (reading and writing)
+# ‘U'	universal newline mode (for backwards compatibility; should not be used in new code)

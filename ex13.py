@@ -10,7 +10,7 @@
 
 from sys import argv
 
-script, first, second, third = argv
+script, first, second, third = argv # 数组解包
 
 print "The script is called :", script
 print "Your first variable is :", first
@@ -22,3 +22,6 @@ print "Your third variable is :", third
 # 2.先感受一下，后面才是正菜
 # 3.运行这个脚本的时候：
 #python ex13.py first 2nd 3rd(后面三个是传递的参数)
+
+#附argv[]说明
+#sys.argv[]是用来获取命令行参数的，sys.argv[0]表示代码本身文件路径，所以参数从1开始
