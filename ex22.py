@@ -21,7 +21,7 @@ print 3 < 5
 # 4.变量和命名
 name = u"姓名:削微寒 " 
 age = u"age=15"
-print "name+age: ", name+age
+print u"name+age: ",name + age
 
 # 5.更多的变量和打印
 print "Say a number!"

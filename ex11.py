@@ -15,8 +15,7 @@ height = raw_input()
 print "How much do you weight?",
 weight = raw_input()
 
-print "So,you're %r old, %r tall and %r heavy." %(
-    age, height, weight)
+print "So,you're %s old, %s tall and %s heavy." % (age, height, weight)
 	
 # 笔记	
 # 1.raw_input()是接受控制台输入的任何信息
