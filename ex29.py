@@ -36,3 +36,4 @@ if people <= dogs:
     
 if people == dogs:
     print "People are dogs."
+    #目前看来，缩进前必有':'，也算是明白了写python为什么需要游标卡尺

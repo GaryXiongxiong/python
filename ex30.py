@@ -15,7 +15,7 @@ buses = 15
 
 if cars > people:
     print "We should take the cars."
-elif cars < people:
+elif cars < people:#else if 写作 elif
     print "We should not take the cars."
 else:
     print "We can't decide."

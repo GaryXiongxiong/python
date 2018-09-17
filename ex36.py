@@ -35,7 +35,7 @@ def weapon():
     else:
         print u"你选的啥？重来！"
         print "-----------"
-        weapon()
+        weapon()#用递归的方式来重新选择
         
 # 选择挑战的内容，treasure参数是宝物的值：none和boom
 # boom只能在dog房打到，有了boom才能打死bos
